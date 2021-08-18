@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Nanum Gothic;
+  font-size: 15px;
+}
+
+body {
+  width: 100%;
+  background-color: #ced1d4;
+}
+
+header {
+  color: #ced1d4;
+  background: #0b253a;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+header > h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+header p {
+  font-size: 0.75rem;
+  display: flex;
+  margin: 3px 0;
+}
+
+header strong {
+  margin-right: 6px;
+}
+
+.target {
+  text-align: center;
+  padding-top: 12px;
+  background-color: #ced1d4;
+}
+
+main {
+  color: #0b253a;
+  padding: 0 20px 72px 20px;
+  background-color: #ced1d4;
+}
+
+.left {
+  margin-bottom: 72px;
+}
+
+#img_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#image_cont {
+  height: 300px;
+  width: 100%;
+  background-image: url("/images/tobi.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin: 48px 0;
+}
+
+.head,
+.work {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 48px;
+}
+
+.head > h2,
+.work > h2 {
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
+.head > div,
+.work > div {
+  background-color: #0b253a;
+  height: 4px;
+  width: 50px;
+  margin-top: 2px;
+  border-radius: 8px;
+}
+
+.head > div {
+  margin-left: 40px;
+}
+
+.work > div {
+  margin-right: 40px;
+}
+
+.about,
+.work_info {
+  display: flex;
+  align-items: flex-start;
+  margin: 6px 0;
+}
+
+.about > div,
+.work_info > div {
+  height: 6px;
+  width: 6px;
+  border-radius: 50%;
+  background-color: #0b253a;
+  margin-top: 7px;
+  margin-right: 6px;
+}
+
+.about > p,
+.work_info > p {
+  flex: 1;
+  line-height: 1.4rem;
+}
+
+.work_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.work_header > h3 {
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.work_header > p {
+  font-size: 0.75rem;
+}
+
+.left {
+  padding-bottom: 72px;
+}
+
+.experience > div:nth-child(1) {
+  margin-bottom: 18px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+footer {
+  background-color: #0b253a;
+}
+
+footer > div {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 12px 0;
+}
+
+footer > div > a {
+  display: inline-block;
+  height: 40px;
+  cursor: pointer;
+}
+
+footer > div > a > img {
+  height: 100%;
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 48px;
+    padding-bottom: 24px;
+  }
+
+  .left {
+    grid-column: 1/1;
+    padding-bottom: 0;
+  }
+
+  .work_section {
+    grid-column: 2/4;
+  }
+
+  .target {
+    padding: 24px 0;
+  }
+
+  #image_cont {
+    height: 300px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .head,
+  .work {
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .head {
+    margin-top: 12px;
+  }
+
+  .experience {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+  }
+}
